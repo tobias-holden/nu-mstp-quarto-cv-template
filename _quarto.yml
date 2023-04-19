@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs
+
+# Website options
+#################
+website:
+  # True website title displayed on browser tabs, in searches, etc.
+  title: MSTP Template  
+  page-footer: "© or other footer information to display on every page"
+  # Website Navigation
+  ####################
+  sidebar:
+    # Sidebar style options 
+    style: floating     # "floating" or "docked"
+    foreground: light   # sidebar text color
+    background: "#593196"     # sidebar background color
+    # Top
+    logo: images/northwestern_logo.png  
+    title: First M. Last
+    header: "Header here"    
+    # Social / scholar links in sidebar
+    ###################################
+    tools: 
+      - icon: twitter
+        text: twitter
+        href: https://twitter.com
+      - icon: linkedin
+        text: linkedin
+        href: https://linkedin.com
+      - icon: github
+        text: github
+        href: https://github.com
+      - icon: mortarboard-fill
+        text: scholar
+        href: https://scholar.google.com
+    search: true        # include site-wide search?
+    # Sidebar Contents
+    ##################
+    # Shows only the index.qmd by default
+    contents: 
+      - text: "Full CV"
+        href: cv.qmd      
+    footer: "*Footer text goes here*"
+# Theme Options
+###############
+format:
+  html:
+    page-layout: full
+    theme: pulse        # more theme options @ https://bootswatch.com/
+    css: styles.css
+
+editor: visual

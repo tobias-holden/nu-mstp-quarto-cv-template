@@ -1,0 +1,37 @@
+---
+title: "Firstname M. Lastname"
+about:
+  template: jolla
+  image-shape: round
+  image: images/silhouette.png
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: linkedin
+      href: https://linkedin.com
+    - icon: github
+      text: github
+      href: https://github.com
+    - icon: mortarboard-fill
+      text: scholar
+      href: https://scholar.google.com
+format: 
+  html:
+    page-layout: article
+---
+> "In examining disease, we gain wisdom about anatomy and physiology and biology. In examining the person with disease, we gain wisdom about life."\
+> ― **Oliver W. Sacks**
+
+[**M.D. Doctor of Medicine**]{style="float:left"} [Start - End\*]{style="float:right"} <br> [Northwestern University]{style="float:left"} <br> [**Ph.D. Graduate Program**]{style="float:left"} [Start - End\*]{style="float:right"} <br> [Northwestern University]{style="float:left"} <br> [**B.S. Undergraduate Major**]{style="float:left"} [Start - End]{style="float:right"} <br> [College University]{style="float:left"}<br>
+
+
+#### Announcements
+
+
+::: callout-important
+## Add a callout
+If you have anything new or exciting you want to announce on the landing page!
+:::
+

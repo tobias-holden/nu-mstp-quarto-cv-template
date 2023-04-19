@@ -1,0 +1,5 @@
+---
+title: B.S.
+author: College Name
+description: "2013 - 2017 <br> Undergraduate Major"
+---

@@ -1,0 +1,14 @@
+---
+title: Title of oral presentation
+author: Presenter or authors
+description: Brief description.
+year: 2020
+doi: <doi>
+abstract: Abstract
+toc: true
+toc-depth: 5
+conference-event: Conference or Event Name
+style: Oral
+---
+
+![]()

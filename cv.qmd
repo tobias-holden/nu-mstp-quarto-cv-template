@@ -1,0 +1,198 @@
+---
+title: ""
+title-block-style: default
+listing:
+  - id: my-education
+    type: grid
+    fields: [title, description, author]
+    sort: "description-desc"
+    contents: my_education/*.qmd   # this will list every experience.qmd in the my_education folder
+    grid-columns: 3
+    page-size: 3
+    
+  - id: my-projects
+    type: grid
+    grid-columns: 3
+    page-size: 3
+    contents: my_projects/*.qmd   # this will list every project.qmd in the my_projects folder
+    fields: [title, description, author]
+    sort: 
+      - "current desc"
+      - "description desc"
+      
+  - id: my-publication-list
+    type: table
+    table-striped: true
+    table-hover: true
+    contents: my_publications/*.qmd 
+    page-size: 5
+    fields: [date, title, journal-name]
+    field-display-names: 
+      journal-name: "Journal"
+      date: "Year"
+    filter-ui: [title, journal-name, author]
+    sort-ui: false
+    date-format: "YYYY"
+    sort: "date-desc"
+    
+  - id: my-oral-presentation-list
+    type: table
+    table-striped: true
+    table-hover: true
+    contents: my_presentations/oral_presentations/*.qmd
+    fields: [year, title, conference-event]
+    filter-ui: [title, conference-event]
+    sort-ui: false
+    sort: "year-desc"
+    page-size: 5
+    field-display-names: 
+      conference-event: "Conference/Event"
+      year: "Year"
+        
+  - id: my-poster-presentation-list
+    type: table
+    table-striped: true
+    table-hover: true
+    contents: my_presentations/poster_presentations/*.qmd
+    fields: [date, title, conference-event]
+    filter-ui: [title, conference-event]
+    sort-ui: false
+    page-size: 5
+    date-format: "YYYY"
+    sort: "date-desc"
+    field-display-names: 
+      conference-event: "Conference/Event"
+      date: "Year"
+  
+  - id: my-grants-and-fellowships
+    contents: grants_and_fellowships/*.qmd
+    type: table
+    page-size: 5
+    sort-ui: false
+    filter-ui: false
+    fields: [years, title, description]
+    field-display-names: 
+      years: "Year(s)"
+      title: "Title"
+      description: "Source"
+    sort: years-desc
+      
+  - id: my-teaching-experiences
+    contents: teaching_and_mentoring/*.qmd
+    type: table
+    fields: [years, title, description]
+    field-display-names: 
+      description: "Subject or Program"
+      title: "Experience"
+      years: "Year(s)"
+    sort-ui: false
+    filter-ui: false
+    sort: years-desc
+    page-size: 5
+    
+  - id: my-work-experiences
+    contents: work_experiences/*.qmd
+    type: table
+    fields: [years, title, description]
+    field-display-names: 
+      description: "Location"
+      title: "Role"
+      years: "Year(s)"
+    sort: years-desc
+    sort-ui: false
+    filter-ui: false
+    page-size: 5
+    
+  - id: my-awards-and-honors
+    contents: awards_and_honors/*.qmd
+    type: table
+    fields: [years, title, description]
+    field-display-names: 
+      title: "Award or Honor"
+      years: "Year(s)"
+      description: "Source"
+    sort-ui: false
+    filter-ui: false
+    sort: years-desc
+    page-size: 5
+
+format: 
+  html: 
+    page-layout: article
+    toc: false
+---
+
+<center>
+
+<h1>
+
+Firstname M. Lastname
+
+------------------------------------------------------------------------
+
+</center>
+
+</h1>
+
+<center>
+
+### [**Education**]{.smallcaps}
+
+</center>
+
+::: {#my-education}
+:::
+
+<center>
+
+### [**Research**]{.smallcaps}
+
+</center>
+
+::: {#my-projects}
+:::
+
+::: panel-tabset
+## Publications
+
+::: {#my-publication-list}
+:::
+
+## Talks
+
+::: {#my-oral-presentation-list}
+:::
+
+## Posters
+
+::: {#my-poster-presentation-list}
+:::
+
+## Grants/Fellowships
+
+::: {#my-grants-and-fellowships}
+:::
+:::
+
+<center>
+
+### [**Activities & Awards**]{.smallcaps}
+
+</center>
+
+::: panel-tabset
+## Teaching & Mentorship
+
+::: {#my-teaching-experiences}
+:::
+
+## Work Experience
+
+::: {#my-work-experiences}
+:::
+
+## Awards & Honors
+
+::: {#my-awards-and-honors}
+:::
+:::

@@ -1,0 +1,25 @@
+[
+  {
+    "listing": "/cv.html",
+    "items": [
+      "/my_education/graduate_school.html",
+      "/my_education/medical_school.html",
+      "/my_education/undergrad.html",
+      "/my_projects/project_2.html",
+      "/my_projects/project_4.html",
+      "/my_projects/project_3.html",
+      "/my_projects/project_1.html",
+      "/my_publications/publication_template.html",
+      "/my_presentations/oral_presentations/oral_presentation_1.html",
+      "/my_presentations/oral_presentations/oral_presentation_2.html",
+      "/my_presentations/oral_presentations/oral_presentation_3.html",
+      "/my_presentations/poster_presentations/poster_presentation_1.html",
+      "/my_presentations/poster_presentations/poster_presentation_2.html",
+      "/my_presentations/poster_presentations/poster_presentation_3.html",
+      "/grants_and_fellowships/grant_template.html",
+      "/teaching_and_mentoring/teaching_experience_template.html",
+      "/work_experiences/work_experience_template.html",
+      "/awards_and_honors/award_template.html"
+    ]
+  }
+]
